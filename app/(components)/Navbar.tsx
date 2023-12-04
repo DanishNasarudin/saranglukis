@@ -28,7 +28,7 @@ function Navbar({}: Props) {
       <nav
         className={`
       top-0 h-full left-0 w-full
-      z-[1] sticky transition-all bg-primary/80 border-b-[1px] border-[#323232]
+      z-[1] sticky transition-all bg-primary/80 border-b-[1px] border-[#cccccc]
         
       before:absolute before:w-full before:h-full before:content-[''] before:backdrop-blur-md before:top-0 before:-z-10`}
       >
@@ -49,7 +49,7 @@ function Navbar({}: Props) {
                 w-full sm:w-min text-center py-20 sm:py-0
                 sm:flex
                 before:absolute before:w-full before:h-full before:content-[''] before:backdrop-blur-md before:top-0 before:-z-10
-                bg-primary/80 border-b-[1px] border-[#323232] sm:border-none`}
+                border-b-[1px] border-[#cccccc] sm:border-none`}
             >
               <li>
                 <a href="/">

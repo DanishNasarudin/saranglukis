@@ -20,7 +20,7 @@ const Hero = (props: Props) => {
             soar. You will be taught according to your own choice of painting
             reference.
           </p>
-          <Link href={"#positions"}>
+          <Link href={"#positions"} className="w-fit mx-auto sm:mx-0">
             <button className="py-2 px-4 sm:py-3 sm:px-6 border-black border-[1px] rounded-lg w-fit mx-auto sm:mt-8 mt-4">
               <p className="text-[10px] sm:text-sm">
                 <b>Learn More</b>
@@ -28,7 +28,7 @@ const Hero = (props: Props) => {
             </button>
           </Link>
         </div>
-        <div className="right bg-red-300 max-w-[300px] w-full h-[250px]">
+        <div className="right bg-red-300 max-w-[300px] w-full h-[350px]">
           picture
         </div>
       </div>
