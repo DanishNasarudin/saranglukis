@@ -9,40 +9,25 @@ const Navbar = dynamic(() => import("./(components)/Navbar"), { ssr: false });
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ideal Tech PC Career",
-  description:
-    "Start, discover and explore your career path through Ideal Tech PC.",
+  title: "Sarang Lukis Official",
+  description: "Your Canvas awaits your story with Acrylic.",
   keywords: [
-    "Ideal Tech",
-    "Custom PC",
-    "Career",
-    "Job",
-    "Linkedin",
-    "Malaysia Job",
+    "Acrylic",
+    "Canvas",
+    "Painting",
+    "Acrylic Painting",
+    "Class",
+    "Art",
+    "Art Class",
   ],
   icons: {
     icon: "/icon?<generated>",
   },
   appleWebApp: true,
-  // openGraph: {
-  //   title: "Ideal Tech PC Career",
-  //   description:
-  //     "Start, discover and explore your career path through Ideal Tech PC.",
-  //   images: [
-  //     {
-  //       url: "https://idealtech.com.my/wp-content/uploads/2023/07/01_Artwork-PC.png",
-  //       width: 1000,
-  //       height: 1000,
-  //       alt: "Ideal Tech Custom PC",
-  //     },
-  //     {
-  //       url: "https://idealtech.com.my/wp-content/uploads/2023/03/IDT_LOGO-150x150.png",
-  //       width: 1000,
-  //       height: 1000,
-  //       alt: "Ideal Tech Gaming PC",
-  //     },
-  //   ],
-  // },
+  openGraph: {
+    title: "Sarang Lukis Official",
+    description: "Your Canvas awaits your story with Acrylic.",
+  },
 };
 
 export default function RootLayout({

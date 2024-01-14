@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <main className={`${inter.className} flex flex-col mx-auto`}>
       <Hero />
-      <Howto />
       <InstaFeed />
+      <Howto />
       <Master />
       <Studio />
       <Details />

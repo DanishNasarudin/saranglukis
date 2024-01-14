@@ -50,6 +50,7 @@ const InstaFeed = (props: Props) => {
   w-full sm:w-4/5 mx-auto px-2 sm:px-0 py-10 sm:py-16
   flex flex-col gap-8
   "
+        id="explore"
       >
         <div className="max-w-[500px] w-full mx-auto text-center">
           <h2>This could be you.</h2>

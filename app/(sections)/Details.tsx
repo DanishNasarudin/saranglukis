@@ -7,8 +7,9 @@ const Details = (props: Props) => {
     <div className="max-w-none sm:max-w-[1060px] mx-auto w-full">
       <div
         className="
-      w-full sm:w-4/5 mx-auto px-2 sm:px-0 py-10 sm:py-8
+      w-full sm:w-4/5 mx-auto px-2 sm:px-0 py-10 sm:py-16
       flex flex-col justify-center gap-8"
+        id="enroll-final"
       >
         <div className="flex flex-col gap-4 justify-center">
           <div className="flex flex-col gap-3 text-center">

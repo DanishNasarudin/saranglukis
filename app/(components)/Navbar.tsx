@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { RiCloseLine, RiMenuLine } from "react-icons/ri";
 import { useScrollListener } from "../(hooks)/useScrollListener";
@@ -14,7 +15,7 @@ function Navbar({}: Props) {
   const [careToggle, setCareToggle] = useState(false);
   const scroll = useScrollListener();
   const [hideNavbar, setHideNavbar] = useState(false);
-  // console.log(scroll);
+  console.log(toggle);
 
   useEffect(() => {
     if (scroll.checkY > 0) {
@@ -35,7 +36,9 @@ function Navbar({}: Props) {
         <div className="max-w-[1060px] mx-auto ">
           <div className="relative w-full sm:w-4/5 mx-auto px-2 py-4 flex justify-between items-center">
             <div className="z-[1] h-[20px] aspect-[100/23]">
-              <Image src={logo} alt={"saranglukis"} objectFit="contain" />
+              <Link href={"/"}>
+                <Image src={logo} alt={"saranglukis"} objectFit="contain" />
+              </Link>
             </div>
             <ul
               className={`${
@@ -52,19 +55,19 @@ function Navbar({}: Props) {
                 border-b-[1px] border-[#cccccc] sm:border-none`}
             >
               <li>
-                <a href="/">
-                  <p>Home</p>
-                </a>
+                <Link href="#enroll" onClick={() => setToggle(true)}>
+                  <p>How?</p>
+                </Link>
               </li>
               <li>
-                <a href="/">
-                  <p>Home</p>
-                </a>
+                <Link href="#explore" onClick={() => setToggle(true)}>
+                  <p>Explore</p>
+                </Link>
               </li>
               <li>
-                <a href="/">
-                  <p>Home</p>
-                </a>
+                <Link href="#studio" onClick={() => setToggle(true)}>
+                  <p>Studio</p>
+                </Link>
               </li>
             </ul>
             <RiMenuLine

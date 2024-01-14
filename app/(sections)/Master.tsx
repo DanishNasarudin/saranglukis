@@ -29,7 +29,7 @@ const Master = (props: Props) => {
             your journey. Be fearless and burst through your imagination. If
             you’re stuck, she will be your hero.
           </p>
-          <Link href={"/"} className="w-fit mx-auto sm:mx-0">
+          <Link href={"#enroll-final"} className="w-fit mx-auto sm:mx-0">
             <button className="py-2 px-4 sm:py-3 sm:px-6 border-black border-[1px] rounded-lg w-fit mx-auto sm:mx-0 sm:mt-8 mt-4">
               <p className="text-[10px] sm:text-sm">
                 <b>Enroll</b>

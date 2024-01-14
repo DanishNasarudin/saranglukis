@@ -1,3 +1,6 @@
+import studio1 from "@/public/studio-1.png";
+import studio2 from "@/public/studio-2.png";
+import studio3 from "@/public/studio-3.png";
 type Props = {};
 
 const Studio = (props: Props) => {
@@ -8,6 +11,7 @@ const Studio = (props: Props) => {
   w-full sm:w-4/5 mx-auto px-2 sm:px-0 py-10 sm:py-16
   flex flex-col gap-8
   "
+        id="studio"
       >
         <div className="max-w-[500px] w-full mx-auto text-center">
           <h2>The SarangLukis “Studio”.</h2>
@@ -15,11 +19,27 @@ const Studio = (props: Props) => {
         </div>
         <div className="flex gap-2 w-full">
           <div className="flex flex-col gap-2 w-full">
-            <div className="bg-accent w-full h-[250px] rounded-md">pics</div>
-            <div className="bg-accent w-full h-[250px] rounded-md">pics</div>
+            <div className="bg-accent w-full h-[250px] rounded-md overflow-hidden">
+              <img
+                src={studio1.src}
+                alt=""
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="bg-accent w-full h-[250px] rounded-md overflow-hidden">
+              <img
+                src={studio2.src}
+                alt=""
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
-          <div className="right hidden sm:block max-w-[250px] bg-accent w-full rounded-md">
-            right
+          <div className="right hidden sm:block max-w-[250px] bg-accent w-full rounded-md overflow-hidden">
+            <img
+              src={studio3.src}
+              alt=""
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>
