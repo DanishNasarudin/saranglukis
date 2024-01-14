@@ -1,5 +1,4 @@
 import master from "@/public/master_pf.jpg";
-import Image from "next/image";
 import Link from "next/link";
 
 type Props = {};
@@ -13,8 +12,8 @@ const Master = (props: Props) => {
       flex items-center justify-between gap-8 flex-col-reverse sm:flex-row"
       >
         <div className="right max-w-[300px] w-full">
-          <Image
-            src={master}
+          <img
+            src={master.src}
             alt={"master"}
             className="aspect-[6/7] object-cover rounded-md"
           />
