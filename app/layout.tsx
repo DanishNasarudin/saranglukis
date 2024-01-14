@@ -9,6 +9,7 @@ const Navbar = dynamic(() => import("./(components)/Navbar"), { ssr: false });
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://saranglukis.netlify.app"),
   title: "Sarang Lukis Official",
   description: "Your Canvas awaits your story with Acrylic.",
   keywords: [

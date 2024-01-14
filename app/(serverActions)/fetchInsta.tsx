@@ -1,4 +1,5 @@
 "use server";
+import fetch from "node-fetch";
 
 type InstagramPost = {
   id: string;
@@ -27,8 +28,8 @@ async function fetchInsta() {
     const maxRequests = 10; // Set a limit to the number of requests
 
     while (imagePosts.length < 9 && nextUrl && requestCount < maxRequests) {
-      const response = await fetch(nextUrl, { cache: "no-store" });
-      const data: InstagramApiResponse = await response.json();
+      const response = await fetch(nextUrl);
+      const data = (await response.json()) as InstagramApiResponse;
 
       // Filter the posts to include only those with media_type as 'IMAGE'
       const newImagePosts = data.data.filter(
