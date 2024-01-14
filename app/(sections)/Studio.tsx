@@ -13,7 +13,15 @@ const Studio = (props: Props) => {
           <h2>The SarangLukis “Studio”.</h2>
           <p>We ensure a spacious area for our students.</p>
         </div>
-        <div>pics</div>
+        <div className="flex gap-2 w-full">
+          <div className="flex flex-col gap-2 w-full">
+            <div className="bg-accent w-full h-[250px] rounded-md">pics</div>
+            <div className="bg-accent w-full h-[250px] rounded-md">pics</div>
+          </div>
+          <div className="right hidden sm:block max-w-[250px] bg-accent w-full rounded-md">
+            right
+          </div>
+        </div>
       </div>
     </div>
   );
