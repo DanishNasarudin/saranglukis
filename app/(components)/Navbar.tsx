@@ -15,7 +15,7 @@ function Navbar({}: Props) {
   const [careToggle, setCareToggle] = useState(false);
   const scroll = useScrollListener();
   const [hideNavbar, setHideNavbar] = useState(false);
-  console.log(toggle);
+  // console.log(toggle);
 
   useEffect(() => {
     if (scroll.checkY > 0) {
