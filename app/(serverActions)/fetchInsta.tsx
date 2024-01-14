@@ -61,7 +61,7 @@ async function fetchUpdatedPostData(postId: string) {
     if (!response.ok) {
       throw new Error("Network response was not ok.");
     }
-    const updatedPost = await response.json();
+    const updatedPost = (await response.json()) as InstagramPost;
     return updatedPost;
   } catch (error) {
     console.error("Error fetching updated post data:", error);
