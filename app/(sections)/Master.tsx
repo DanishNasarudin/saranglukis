@@ -1,4 +1,4 @@
-import master from "@/public/master_pf.jpg";
+import master from "@/public/master_pf.webp";
 import Link from "next/link";
 
 type Props = {};
@@ -11,11 +11,11 @@ const Master = (props: Props) => {
       w-full sm:w-4/5 mx-auto px-2 sm:px-0 py-10 sm:py-16
       flex items-center justify-between gap-8 flex-col-reverse sm:flex-row"
       >
-        <div className="right max-w-[300px] w-full">
+        <div className="right max-w-[300px] w-full bg-red-500 object-cover overflow-hidden rounded-md">
           <img
             src={master.src}
             alt={"master"}
-            className="aspect-[6/7] object-cover rounded-md"
+            className="h-full aspect-[6/7] object-cover"
           />
         </div>
         <div className="left max-w-[400px] sm:max-w-[500px] w-full flex flex-col gap-2 text-center sm:text-left">

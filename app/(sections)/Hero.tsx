@@ -1,4 +1,4 @@
-import heroimage from "@/public/hero-image.png";
+import heroimage from "@/public/hero-image.webp";
 import Link from "next/link";
 
 type Props = {};

@@ -1,6 +1,6 @@
-import studio1 from "@/public/studio-1.png";
-import studio2 from "@/public/studio-2.png";
-import studio3 from "@/public/studio-3.png";
+import studio1 from "@/public/studio-1.webp";
+import studio2 from "@/public/studio-2.webp";
+import studio3 from "@/public/studio-3.webp";
 type Props = {};
 
 const Studio = (props: Props) => {

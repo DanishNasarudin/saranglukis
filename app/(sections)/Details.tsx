@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 type Props = {};
 
 const Details = (props: Props) => {
@@ -20,13 +18,13 @@ const Details = (props: Props) => {
               every week.
             </p>
           </div>
-          <Link href={"/"} className="w-fit mx-auto">
+          <a href={"/"} className="w-fit mx-auto">
             <button className="py-2 px-4 sm:py-3 sm:px-6 border-black border-[1px] rounded-lg w-fit mx-auto sm:mx-0 mt-4">
               <p className="text-[10px] sm:text-sm">
                 <b>Send us a message!</b>
               </p>
             </button>
-          </Link>
+          </a>
         </div>
         <div
           className="
