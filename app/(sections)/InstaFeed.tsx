@@ -48,7 +48,7 @@ const InstaFeed = (props: Props) => {
     <div className="max-w-none sm:max-w-[1060px] mx-auto w-full">
       <div
         className="
-  w-full sm:w-4/5 mx-auto px-2 sm:px-0 py-10 sm:py-16
+  w-full sm:w-4/5 mx-auto px-4 sm:px-0 py-10 sm:py-16
   flex flex-col gap-8
   "
         id="explore"
@@ -84,9 +84,11 @@ const InstaFeed = (props: Props) => {
               return (
                 <div key={index} className="block sm:hidden">
                   <a href={image.permalink} target="_blank">
-                    <img
+                    <Image
                       src={image.media_url}
                       alt={image.media_type}
+                      width={500}
+                      height={500}
                       className="object-cover aspect-square rounded-md"
                       onError={(e) => handleImageError(e, image.id)}
                     />

@@ -8,7 +8,7 @@ const Studio = (props: Props) => {
     <div className="max-w-none sm:max-w-[1060px] mx-auto w-full">
       <div
         className="
-  w-full sm:w-4/5 mx-auto px-2 sm:px-0 py-10 sm:py-16
+  w-full sm:w-4/5 mx-auto px-4 sm:px-0 py-10 sm:py-16
   flex flex-col gap-8
   "
         id="studio"

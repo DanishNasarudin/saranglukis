@@ -7,12 +7,12 @@ const Howto = (props: Props) => {
     <div className="max-w-none sm:max-w-[1060px] mx-auto w-full">
       <div
         className="
-      w-full sm:w-4/5 mx-auto px-2 sm:px-0 py-10 sm:py-16
+      w-full sm:w-4/5 mx-auto px-4 sm:px-0 py-10 sm:py-16
       flex flex-col justify-center gap-8"
         id="enroll"
       >
         <h2 className="text-center">How do you Enroll?</h2>
-        <div className="w-full flex justify-between gap-3">
+        <div className="w-full flex justify-between gap-4 xs:gap-2 flex-col xs:flex-row">
           <EnrollStep
             number={1}
             header={"Class Timing"}

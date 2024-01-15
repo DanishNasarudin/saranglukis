@@ -8,7 +8,7 @@ const Hero = (props: Props) => {
     <div className="max-w-none sm:max-w-[1060px] mx-auto w-full">
       <div
         className="
-      w-full sm:w-4/5 mx-auto px-2 sm:px-0 py-10 sm:py-8 sm:pb-4
+      w-full sm:w-4/5 mx-auto px-4 sm:px-0 py-2 sm:py-8 sm:pb-4
       flex items-center justify-between gap-4 flex-col-reverse sm:flex-row"
       >
         <div className="left max-w-[400px] sm:max-w-[500px] w-full flex flex-col gap-2 text-center sm:text-left">
