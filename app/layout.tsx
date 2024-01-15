@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     title: "Sarang Lukis Official",
     description: "Your Canvas awaits your story with Acrylic.",
   },
+  verification: {
+    google: "weN2Dgl5AzVy4xMAf9Q66ANAINjaP00wXGOZQ2R7dPo",
+  },
 };
 
 export default function RootLayout({
