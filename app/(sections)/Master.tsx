@@ -15,7 +15,7 @@ const Master = (props: Props) => {
           <img
             src={master.src}
             alt={"master"}
-            className="h-full aspect-[6/7] object-cover"
+            className="aspect-[6/7] object-cover"
           />
         </div>
         <div className="left max-w-[400px] sm:max-w-[500px] w-full flex flex-col gap-2 text-center sm:text-left">
