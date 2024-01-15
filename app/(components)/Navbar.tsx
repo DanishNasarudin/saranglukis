@@ -33,7 +33,7 @@ function Navbar({}: Props) {
       before:absolute before:w-full before:h-full before:content-[''] before:backdrop-blur-md before:top-0 before:-z-10`}
       >
         <div className="max-w-[1060px] mx-auto ">
-          <div className="relative w-full sm:w-4/5 mx-auto px-4 py-4 flex justify-between items-center">
+          <div className="relative w-full sm:w-4/5 mx-auto px-4 sm:px-0 py-4 flex justify-between items-center">
             <div className="z-[1] h-[20px] aspect-[100/23]">
               <a href={"/"}>
                 <Image src={logo} alt={"saranglukis"} objectFit="contain" />
