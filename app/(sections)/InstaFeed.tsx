@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import {
   fetchInsta,
@@ -67,11 +66,9 @@ const InstaFeed = (props: Props) => {
               return (
                 <div key={index} className="hidden sm:block">
                   <a href={image.permalink} target="_blank">
-                    <Image
+                    <img
                       src={image.media_url}
                       alt={image.media_type}
-                      width={500}
-                      height={500}
                       className="object-cover aspect-square rounded-md"
                       onError={(e) => handleImageError(e, image.id)}
                     />
@@ -84,11 +81,9 @@ const InstaFeed = (props: Props) => {
               return (
                 <div key={index} className="block sm:hidden">
                   <a href={image.permalink} target="_blank">
-                    <Image
+                    <img
                       src={image.media_url}
                       alt={image.media_type}
-                      width={500}
-                      height={500}
                       className="object-cover aspect-square rounded-md"
                       onError={(e) => handleImageError(e, image.id)}
                     />
