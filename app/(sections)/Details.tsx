@@ -18,7 +18,11 @@ const Details = (props: Props) => {
               every week.
             </p>
           </div>
-          <a href={"/"} className="w-fit mx-auto">
+          <a
+            href={"https://m.me/saranglukis"}
+            className="w-fit mx-auto"
+            target="_blank"
+          >
             <button className="py-2 px-4 sm:py-3 sm:px-6 border-black border-[1px] rounded-lg w-fit mx-auto sm:mx-0 mt-4">
               <p className="text-[10px] sm:text-sm">
                 <b>Send us a message!</b>
