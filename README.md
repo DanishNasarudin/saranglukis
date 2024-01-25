@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Single Page Next JS with Instagram API
 
-## Getting Started
+This project is a pure attempt to utilize Instagram API.
+I might be going overboard by using Next JS as the framework,
+but it is a good practice for me to understand the framework in detail.
 
-First, run the development server:
+[View Website](https://saranglukis.netlify.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Implemented
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+|  | Tech | Purpose |
+| -- | -- | -- |
+| <img alt="" src= "https://static-00.iconduck.com/assets.00/nextjs-icon-512x512-y563b8iq.png" height="13"> | Next JS 13 App Router | React Framework |
+| <img alt="" src= "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png" height="13"> | React JS | JS Library |
+| <img alt="" src= "https://cdn-icons-png.flaticon.com/512/5968/5968381.png" height="13"> | Typescript | JS Syntax |
+| <img alt="" src= "https://cdn.iconscout.com/icon/free/png-256/netlify-3628945-3030170.png" height="13"> | Netlify | Deployment |
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Instagram API Overview
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Due to complications with Netlify, the node-fetch library was required instead of using the provided fetch by Next JS.
 
-## Learn More
+The fetch query is being made to:
 
-To learn more about Next.js, take a look at the following resources:
+https://graph.instagram.com/me/media?fields=${fields}&access_token=${key}
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This essentially fetch an array of Instagram posts with the selected fields requested.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+(E.g. Fields: id,caption,media_url,timestamp,media_type,permalink)
 
-## Deploy on Vercel
+However, Instagram API have an expiry for every fetch retrieved which requires a continuous refetch for expired images. At the same time, to reduce the number of requests, the following fetch query is used instead by pointing to the specific post id:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+https://graph.instagram.com/${postId}?fields=${fields}&access_token=${key}
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Conclusion
+
+The project taught me the basics of fetch requests made to 3rd party APIs.
+
+It is also a good experiment to figure out the compatibility between Next JS 13 and Netlify. Several complications were introduced, but appropriate solutions were implemented.
